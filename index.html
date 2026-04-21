@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+    background-size: 400% 400%;
+    animation: bg 10s ease infinite;
+    color: white;
+}
+
+/* Background animation */
+@keyframes bg {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 15px;
+}
+
+/* SECTIONS */
+section {
+    margin: 30px auto;
+    padding: 25px;
+    width: 85%;
+    max-width: 850px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    margin-bottom: 10px;
+    border-left: 5px solid #ffd700;
+    padding-left: 10px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+/* SKILLS */
+.skill {
+    margin: 10px 0;
+}
+
+.bar {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.bar-fill {
+    height: 10px;
+    background: #ffd700;
+    border-radius: 20px;
+}
+
+.html { width: 70%; }
+.css { width: 60%; }
+.js { width: 50%; }
+.python { width: 55%; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#details">Details</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<!-- HOME -->
+<header id="home">
+    <h1>Homer Cargo</h1>
+    <p>Aspiring Web Developer</p>
+    <img src="https://uploads.onecompiler.io/443hdh74u/44kws2qup/6698.jpg">
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an Information Technology student currently studying at OLSHCO.
+        I am passionate about technology and enjoy building websites and systems.
+        I aim to improve my skills and become a professional developer.
+    </p>
+</section>
+
+<!-- DETAILS -->
+<section id="details">
+    <h2>Personal Details</h2>
+    <table>
+        <tr><td><strong>Full Name:</strong></td><td>Homer Cargo</td></tr>
+        <tr><td><strong>Age:</strong></td><td>19</td></tr>
+        <tr><td><strong>Email:</strong></td><td>homercargo14@gmail.com</td></tr>
+        <tr><td><strong>Address:</strong></td><td>Bacayao, Guimba, Nueva Ecija</td></tr>
+    </table>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education & Goals</h2>
+
+    <p><strong>School:</strong> Our Lady of Sacred Heart College (OLSHCO)</p>
+    <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+
+    <br>
+
+    <p><strong>My Goals:</strong></p>
+    <p>
+        My goal is to become a skilled web developer and create useful systems.
+        I want to continue learning new technologies and improve my skills
+        to prepare for future opportunities in the IT field.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="bar-fill html"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="bar-fill css"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="bar-fill js"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Python</p>
+        <div class="bar"><div class="bar-fill python"></div></div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Homer Cargo | Portfolio Website
+</footer>
+
+</body>
+</html>
